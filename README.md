@@ -4,7 +4,7 @@ Install Argocd on Kubernetes Cluster / EKS Cluster (AWS)
 How to use it
 ```
 module "argocd" {
-  source                 = "git@github.com:taulanthalili/terraform-argocd-install.git?ref=main"
+  source                 = "git::https://github.com/taulanthalili/terraform-argocd-install.git?ref=main"
   namespace              = module.data.namespace
   environment            = module.data.environment
   main_domain            = module.data.argocd_domain
